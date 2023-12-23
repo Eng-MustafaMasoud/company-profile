@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+html{
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans',sans-serif;
+  src: url('./assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf');
+}
+
+body{
+  background-color: #0c0c1d;
+  color: lightgray;  
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+section{
+  height: 100vh;
+  scroll-snap-align: center;
+
+
+}
+.cursor{
+  z-index: 10000;
+  position: absolute;
+}
+
+
+@media screen and (max-width:380px){
+  section{
+
+    height:100%;
+
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1480px) {
+  section{
+      padding: 0 1rem;
+
+  } 
+  .navbar{
+      padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .contactSection{
+    height: 100%;
+  }
+}
